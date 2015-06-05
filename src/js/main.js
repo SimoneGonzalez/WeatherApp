@@ -1,0 +1,1 @@
+var API_URL = 'http://api.wunderground.com/api/9608de0b18f9ff6f/conditions/geolookup/forecast10day/q/';
