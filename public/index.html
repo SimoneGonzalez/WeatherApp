@@ -1,2 +1,20 @@
-
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en-US" ng-app="weangular">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weangular</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div ng-controller="WeatherController as weather" class="app">
+        <div ng-hide="weather.temp_f" class="temp">Looking up weather...</div>
+        <div ng-show="weather.temp_f" class="temp">{{weather.temp_f}} ºF</div>
+      </div>
+    </div>
+    <script src="lib/build.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
